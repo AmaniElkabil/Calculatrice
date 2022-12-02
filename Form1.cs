@@ -92,6 +92,7 @@ namespace Calculatrice
             function = '-';
             first = input;
             input = "";
+            label_result.Text = first + second;
         }
 
         private void multiple_Click(object sender, EventArgs e)
@@ -99,12 +100,16 @@ namespace Calculatrice
             function = '*';
             first = input;
             input = "";
+            label_result.Text = first + second;
+
         }
 
         private void divise_Click(object sender, EventArgs e)
         {
             function = '/';
-
+            first = input;
+            input = "";
+            label_result.Text = first + second;
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -179,6 +184,10 @@ namespace Calculatrice
             Calcul.Text += input;
         }
 
-       
+        private void labelresult_Click(object sender, EventArgs e)
+        {
+            label_result.Text = "";
+
+        }
     }
 }

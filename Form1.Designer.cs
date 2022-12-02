@@ -46,6 +46,8 @@
             this.divise = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.Calcul = new System.Windows.Forms.Label();
+            this.label_result = new System.Windows.Forms.Label();
+            this.labelresult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // num1
@@ -299,12 +301,33 @@
             this.Calcul.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.Calcul.Click += new System.EventHandler(this.Calcul_Click);
             // 
+            // label_result
+            // 
+            this.label_result.AutoSize = true;
+            this.label_result.Location = new System.Drawing.Point(32, 19);
+            this.label_result.Name = "label_result";
+            this.label_result.Size = new System.Drawing.Size(0, 13);
+            this.label_result.TabIndex = 20;
+            // 
+            // labelresult
+            // 
+            this.labelresult.AutoSize = true;
+            this.labelresult.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.labelresult.Location = new System.Drawing.Point(30, 20);
+            this.labelresult.Name = "labelresult";
+            this.labelresult.Size = new System.Drawing.Size(35, 13);
+            this.labelresult.TabIndex = 21;
+            this.labelresult.Text = "label1";
+            this.labelresult.Click += new System.EventHandler(this.labelresult_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(370, 377);
+            this.Controls.Add(this.labelresult);
+            this.Controls.Add(this.label_result);
             this.Controls.Add(this.Calcul);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.divise);
@@ -326,6 +349,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -349,6 +373,8 @@
         private System.Windows.Forms.Button divise;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Label Calcul;
+        private System.Windows.Forms.Label label_result;
+        private System.Windows.Forms.Label labelresult;
     }
 }
 
